@@ -4,7 +4,7 @@ This is an example of how to use mutiple keywords with [Pocketsphinx.js](https:/
 
 # Demo
 
-[https://lab.moogs.io/pocketsphinxjs-multiple-keywords](https://lab.moogs.io/pocketsphinxjs-multiple-keywords)
+[http://lab.moogs.io/pocketsphinxjs-multiple-keywords](http://lab.moogs.io/pocketsphinxjs-multiple-keywords)
 
 # Running example
 
