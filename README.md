@@ -117,9 +117,9 @@ Notes on keyphrase thresholds:
   - The threshold depends on the word, for optimal detection you need to use word-specific thresholds.
   - Default threshold is `1`.
   - Threshold can be in scientific notation or decimal notation: `/1e-1/` or `/0.1/`
-  - If you have too many false alarms try reducing keyword threshold .
-  - Try keyword threshold values as `1e-60`, `1e-40`, `1e-20`, `1e-10`.
-  - Bigger threshold drops uncertain occurrences of keyword, decreasing amount of false alarms. Ex `1e-10 > 1e-30`.
+  - If you have too many false alarms try reducing keyword threshold.
+  - Try keyword threshold values such as `1e-60`, `1e-40`, `1e-20`, `1e-10`, etc.
+  - Bigger threshold drops uncertain occurrences of keyword, decreasing amount of false alarms. I.E. `1e-10 > 1e-30`.
 
 Compile keyhprases to JavaScript file for pocketsphinx.js:
 
