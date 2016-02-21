@@ -125,7 +125,6 @@ Compile keyhprases to JavaScript file for pocketsphinx.js:
 
 ```bash
 $ cd ~/Downloads/pocketsphinx.js/
-
 $ python ../emscripten/tools/file_packager.py ./pocketsphinx.js --embed keyphrase.list --js-output=keyphrase-list.js
 ```
 
@@ -135,14 +134,13 @@ $ python ../emscripten/tools/file_packager.py ./pocketsphinx.js --embed keyphras
 
 ```bash
 $ cd ~/Downloads/pocketsphinx.js/
-
 $ pocketsphinx_continuous -inmic yes -kws keyphrase.list -dict dicts/keyphrase.dic
 ```
 
 You can also record an audio file using [sox](http://sox.sourceforge.net/) and use that instead of the live microphone:
 
 ```bash
-sox -d -c 1 -r 16000 -e signed -b 16 dog.wav
+$ sox -d -c 1 -r 16000 -e signed -b 16 dog.wav
 ```
 
 ```bash
