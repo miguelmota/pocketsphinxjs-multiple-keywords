@@ -4,9 +4,9 @@ This is an example of how to use mutiple keywords with [Pocketsphinx.js](https:/
 
 # Demo
 
-[https://lab.moogs.io/pocketsphinxjs-mutltiple-keywords](https://lab.moogs.io/pocketsphinxjs-mutltiple-keywords)
+[https://lab.moogs.io/pocketsphinxjs-multiple-keywords](https://lab.moogs.io/pocketsphinxjs-multiple-keywords)
 
-## Running example
+# Running example
 
 ```bash
 $ git clone https://github.com/miguelmota/pocketsphinxjs-multiple-keywords.git
@@ -14,9 +14,9 @@ $ cd pocketsphinxjs-multiple-keywords
 $ python -m SimpleHTTPServer 8000
 ```
 
-Navigate to 'http://localhost:8000' in your browser.
+Navigate to [`http://localhost:8000/`](http://localhost:8000/) in your browser.
 
-## Generating pocketsphinx.js with dictionary
+# Generating pocketsphinx.js with dictionary
 
 Download [Portable Emscripten](https://kripken.github.io/emscripten-site/docs/getting_started/downloads.html):
 
@@ -37,11 +37,10 @@ Download [Emscripten](https://github.com/kripken/emscripten):
 
 ```bash
 $ cd ~/Downloads
-
 $ git clone https://github.com/kripken/emscripten.git
 ```
 
-Download [Pocketsphinx.js](https://github.com/syl22-00/pocketsphinx.js)
+Download [Pocketsphinx.js](https://github.com/syl22-00/pocketsphinx.js):
 
 ```bash
 $ git clone https://github.com/syl22-00/pocketsphinx.js.git
@@ -53,15 +52,13 @@ Create a dictionary file:
 
 ```bash
 $ cd ~/Downloads/pocketsphinx.js/
-
 $ mkdir dicts
-
 $ vim dicts/keyphrase.dict
 ```
 
 `keyphrase.dict`:
 
-``text
+```text
 CAT K AE T
 DOG D AO G
 FISH F IH SH
@@ -100,7 +97,7 @@ Note: You can also compile pocketsphinx without a dictionary to add the words dy
 $ cmake -DEMSCRIPTEN=1 -DCMAKE_TOOLCHAIN_FILE=/Users/username/Downloads/emscripten/cmake/Modules/Platform/Emscripten.cmake  .
 ```
 
-## Generating keyword list for pocketsphinx.js
+# Generating keyword list for pocketsphinx.js
 
 ```bash
 cd ~/Downloads/pocketsphinx.js/
@@ -110,7 +107,7 @@ vim keyphrase.list
 
 `keyphrase.list`:
 
-```
+```text
 CAT /1e-15/
 DOG /1e-15/
 FISH /1e-12/
