@@ -100,7 +100,6 @@ $ cmake -DEMSCRIPTEN=1 -DCMAKE_TOOLCHAIN_FILE=/Users/username/Downloads/emscript
 
 ```bash
 cd ~/Downloads/pocketsphinx.js/
-
 vim keyphrase.list
 ```
 
@@ -116,7 +115,6 @@ Notes on keyphrase thresholds:
   - One phrase per line with threshold for each phrase.
   - Threshold must be selected to avoid false alarms.
   - The threshold depends on the word, for optimal detection you need to use word-specific thresholds.
-
   - Default threshold is `1`.
   - Threshold can be in scientific notation or decimal notation: `/1e-1/` or `/0.1/`
   - If you have too many false alarms try reducing keyword threshold .
