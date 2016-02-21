@@ -14,7 +14,7 @@ $ cd pocketsphinxjs-multiple-keywords
 $ python -m SimpleHTTPServer 8000
 ```
 
-Navigate to [`http://localhost:8000/`](http://localhost:8000/) in your browser.
+Navigate to [http://localhost:8000/](http://localhost:8000/) in your browser.
 
 # Generating pocketsphinx.js with dictionary
 
@@ -64,14 +64,13 @@ DOG D AO G
 FISH F IH SH
 ```
 
-Note: Check out the [CMU Sphinx Pronouncing Dictionary](http://svn.code.sf.net/p/cmusphinx/code/trunk/cmudict/sphinxdict/) for getting the English dictionary phonemes. For convenience I have wrapped it in a CLI tool, [`cmusphinxdict`](https://github.com/miguelmota/cmusphinxdict).
+Note: Check out the [CMU Sphinx Pronouncing Dictionary](http://svn.code.sf.net/p/cmusphinx/code/trunk/cmudict/sphinxdict/) for getting English dictionary phonemes. For convenience I have wrapped it in a CLI tool, [`cmusphinxdict`](https://github.com/miguelmota/cmusphinxdict).
 
 
 Now compile pocketsphinx with dictionary.
 
 ```bash
-cd ~/Downloads/pocketsphinx.js/
-
+$ cd ~/Downloads/pocketsphinx.js/
 $ cmake -DEMSCRIPTEN=1 -DCMAKE_TOOLCHAIN_FILE=/Users/username/Downloads/emscripten/cmake/Modules/Platform/Emscripten.cmake -DDICT_BASE=./dicts -DDICT_FILES=keyphrase.dict .
 
 Copying /Users/username/Sandbox/pocketsphinx.js/am/rm1_200 to binary dir
@@ -81,7 +80,7 @@ Copying ./dicts/keyphrase.dict to binary dir
 -- Build files have been written to: /Users/username/Sandbox/pocketsphinx.js
 ```
 
-Then run `make` to generate `pocketsphinx.js` file containing dictionary.
+Then run `make` to generate `pocketsphinx.js` with embeded dictionary:
 
 ```bash
 $ make
